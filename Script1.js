@@ -38,9 +38,9 @@ let filtered = [];
     if (letter ) {
         filtered = cities.filter(city => city.name.toLowerCase().startsWith(letter));
         }
-// Ushow the count of matching cities, or ask for a letter on the UI
+// show the count of matching cities, or ask for a letter on the UI
         result.textContent = letter
-            ? `Number of cities starting with "${letter.toUpperCase()}": ${filtered.length}`
+            ? `Number of cities starting with ${letter.toUpperCase()}: ${filtered.length}`
             : 'Please enter a letter.';
            });
 
