@@ -1,4 +1,4 @@
-// Js source code
+//Js source code
 
 const input = document.getElementById('letterInput');
 const result = document.getElementById('result');
@@ -30,7 +30,9 @@ const result = document.getElementById('result');
 // Validation of input value as alphabetic character (a-z or A-Z)
     if (letter && !/^[a-zA-Z]$/.test(letter)) {
     alert('Please enter only a letter (a-z OR A-Z)');
+    return;
   }
+
 
 // Created empty list of filtered city and If a valid letter exists, filter cities by names starting with that letter stored
 let filtered = [];
@@ -39,7 +41,7 @@ let filtered = [];
         filtered = cities.filter(city => city.name.toLowerCase().startsWith(letter));
         }
 // show the count of matching cities, or ask for a letter on the UI
-        result.textContent = letter
+        result.textContent = letter 
             ? `Number of cities starting with ${letter.toUpperCase()}: ${filtered.length}`
             : 'Please enter a letter.';
            });
