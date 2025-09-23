@@ -6,7 +6,7 @@ This project is a simple web application that allows the user to enter a letter 
 - **Backend:** JavaScript (fetches directly from the OpenWeatherMap sample endpoint, with proxy handling for CORS)  
 
 ##  Features
-- Input box that accepts a single letter (A–Z).  
+- Input box that accepts a single letter (a-z A–Z).  
 - Validation to ensure only letters are entered.  
 - Fetches city data from the OpenWeatherMap sample endpoint:  
 https://samples.openweathermap.org/data/2.5/box/city?bbox=12,32,15,37,10&appid=b6907d289e10d714a6e88b30761fae22
@@ -38,7 +38,7 @@ User types: S
 App counts how many cities from the API start with "S".
 
 Displays result:
-Number of cities starting with "S": 3
+Number of cities starting with "S": 1
 
 🔹 Preview
 added the screenshot in git repository
