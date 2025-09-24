@@ -20,7 +20,7 @@ const result = document.getElementById('result');
         console.log("Loaded cities from endpoint:", cities.map(c => c.name));
         } 
         else {
-        console.log("Endpoint returned empty, check the endpoint data.");
+        console.log("Endpoint returned empty, Please check the endpoint data.");
         }
        })
 // Added a listner to check if user input any value
