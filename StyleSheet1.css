@@ -1,8 +1,10 @@
 ﻿body {
     font-family: Arial, sans-serif;
-    background-color: purple;
-    margin: 0;
-    padding: 0;
+    background-image: url("cities.png");
+    background-size: cover;
+    background-position: center;
+    margin: 25px;
+    padding: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,7 +15,7 @@
     text-align: center;
     padding: 20px;
     border-radius: 8px;
-    background-color: Pink;
+    background-color: pink;
     width: 350px;
 }
 
