@@ -26,7 +26,7 @@ jobs:
       - name: Upload static files
         uses: actions/upload-pages-artifact@v3   # ✅ correct for Pages
         with:
-          path: https://github.com/pradeeppankaj/CityCount/blob/main/Index.html   # folder where index.html is located
+          path: https://github.com/pradeeppankaj/CityCount/blob/main/index.html   # folder where index.html is located
 
       - name: Deploy to GitHub Pages
         id: deployment
