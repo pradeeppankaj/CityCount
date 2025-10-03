@@ -1,0 +1,25 @@
+name: Deploy Website
+
+on:
+  push:
+    branches:
+      - main   # Runs workflow when code is pushed to "main" branch
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload website files
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: .   # Root directory where index.html is
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
