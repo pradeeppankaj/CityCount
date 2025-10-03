@@ -2,7 +2,7 @@ name: Deploy static site to Pages
 
 on:
   push:
-    branches: ["main"]   # change to "master" if that's your branch
+    branches: ["main"]   # or "master" if that's your default branch
 
 permissions:
   contents: read
@@ -21,13 +21,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4   # ✅ latest
+        uses: actions/checkout@v4   # ✅ latest checkout
 
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2   # ✅ latest
+      - name: Upload static files
+        uses: actions/upload-pages-artifact@v3   # ✅ correct for Pages
         with:
-          path: .   # root folder with index.html
+          path: .   # folder where index.html is located
 
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4   # ✅ latest
+        uses: actions/deploy-pages@v4   # ✅ latest deployment
