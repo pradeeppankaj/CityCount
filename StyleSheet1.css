@@ -20,7 +20,7 @@
 }
 
 h1 {
-    color: Red;
+    color: Green;
 }
 
 #letterInput {
@@ -37,5 +37,6 @@ h1 {
     font-weight: bold;
     color: Green;
 }
+
 
 
